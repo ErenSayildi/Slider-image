@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body
+{
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container
+{
+    display: flex;
+    width: 76vw;
+}
+
+.panel
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 76vh;
+    flex: 0.5;
+    position: relative;
+    border-radius: 4rem;
+    margin: 0.75rem;
+    transition: flex 0.7s ease-in ;
+}
+
+.panel p
+{
+    position: absolute;
+    font-size: 3rem;
+    color: #fff;
+    bottom: 2rem;
+    left: 2.30rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s ;
+}
+
+.panel.active p
+{
+    opacity: 1;
+}
+
+
+.panel.active
+{
+    flex: 5;
+}
